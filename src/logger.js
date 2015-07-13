@@ -1,6 +1,6 @@
 import { log } from 'headway';
 
-const defaultLogPath = 'log/micro.log';
+const DEFAULT_LOG_PATH = 'log/micro.log';
 
 export default class Logger {
   constructor(config) {
@@ -8,20 +8,23 @@ export default class Logger {
     this._outputStream = fs.createWriteStream(this.logPath);
   }
 
-  debug: (msg) -> {
+  debug() {
 
   }
 
-  warn: (msg) -> {
+  warn() {
 
   }
 
-  error: (msg) -> {
+  error() {
 
   }
 
+  //
   // private
-  _mkdir: () -> {
+  //
+
+  _mkdir() {
 
   }
 }
