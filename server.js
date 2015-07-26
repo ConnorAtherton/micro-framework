@@ -31,6 +31,9 @@ export default class App extends Micro {
   //
   // @cache
   @index
+  // means that it will skip out the view engine and compile to html
+  // and put in the public folder so we can let web server cache it
+  @html || @static
   home ('/home') {
     // sets response code to 200 by default unless error
     // occurs in middleware

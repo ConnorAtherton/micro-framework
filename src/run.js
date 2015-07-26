@@ -1,4 +1,4 @@
-import { micro } from './micro';
+import micro from './micro';
 import {
 
 } from './decorators'
@@ -20,5 +20,6 @@ export default function run(appPath, options = {}) {
     process.exit(1);
   }
 
+  // This might be a string
   app.run();
 }
