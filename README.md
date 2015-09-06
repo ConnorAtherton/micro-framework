@@ -39,3 +39,7 @@ of middleware present and if that fails raise an error.
 ## Modules needed
 
 - https://github.com/tj/consolidate.js/blob/master/lib/consolidate.js for rendering
+
+## Thoughts
+
+- a decorator class need only implement a `decorate` method.
